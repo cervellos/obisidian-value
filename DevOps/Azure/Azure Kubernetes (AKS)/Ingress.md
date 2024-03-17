@@ -1,0 +1,1 @@
+un tipo de recurso que nos permite create acesso en servicio basados en el path

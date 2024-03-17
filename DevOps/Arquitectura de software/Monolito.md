@@ -1,0 +1,1 @@
+¿Qué es una arquitectura monolítica? Una arquitectura monolítica es un **estilo de arquitectura de software en el que una aplicación se desarrolla como una sola unidad o componente indivisible**, tienen como característica el uso de una base de código única para sus servicios o funcionalidades.

@@ -1,0 +1,1 @@
+software que interpreta comandos pasados por terminales

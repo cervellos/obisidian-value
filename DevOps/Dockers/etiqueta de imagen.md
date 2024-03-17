@@ -1,0 +1,1 @@
+Una etiqueta de imagen es una cadena de texto que se usa para generar versiones de una imagen.

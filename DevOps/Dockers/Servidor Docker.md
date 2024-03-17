@@ -1,0 +1,1 @@
+`dockerd` responde a las solicitudes del cliente a través de la API de REST de Docker y puede interactuar con otros demonios. El servidor de Docker también es responsable de realizar un seguimiento del ciclo de vida de nuestros contenedores.
