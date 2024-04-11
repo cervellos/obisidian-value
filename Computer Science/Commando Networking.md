@@ -9,7 +9,12 @@ PING [Host PATH]
 nslookup [host PATH]
 ```
 
-**Se**
+**agregar DNS** para entornos unix
+```
+sudo nano /etc/hosts
 ```
 
 ```
+nano ~/.zshrc
+```
+

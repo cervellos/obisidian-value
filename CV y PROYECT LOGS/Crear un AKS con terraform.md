@@ -638,7 +638,10 @@ the source : 'https://learn.microsoft.com/en-us/azure/aks/learn/tutorial-kuberne
 
 aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 858332052541.dkr.ecr.us-east-1.amazonaws.com
 
-docker pull [name imagen ]
+docker pull [uri imagen:tag ]
+```
+docker pull 858332052541.dkr.ecr.us-east-1.amazonaws.com/kilimo-stg-mmrv-backend-repository:4b1936b12fc8ddaadd07a3cb84d9c218ebac4386
+```
 
 aws sso logout
 ??? 'SSO_ACCOUNT=$(aws sts get-caller-identity --query "Account" --profile sso)'
@@ -649,6 +652,7 @@ docker logout
 az acr login --name mmrvstagingacr (ubicar credenciales en el portal “access key”) 
 
 docker tag [ imagen actual ]  [ imagen nueva ]
+
 
 docker push [ imagen name ]
 # comando kubectl
