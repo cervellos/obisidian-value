@@ -667,3 +667,9 @@ kubectl get pod -n namespace
 kubectl describe pod -n namespace podname
 
 kubectl logs -n namespace podname
+
+https://cert-manager.io/docs/installation/kubectl/#verify seguir los pasos en el url la opcion 3.1
+
+
+poner esta linea en el ingress del deploy secion [annotation]
+cert-manager.io/cluster-issuer: letsencrypt-prod

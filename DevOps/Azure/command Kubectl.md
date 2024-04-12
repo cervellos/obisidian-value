@@ -36,9 +36,9 @@ Kubectl apply
 
 
 ```
-Kubectl exec
+Kubectl exec [pod name] -it -- bash
 ```
-: permite ejecutar un comando dentro de un contenedor
+: permite ejecutar un comando dentro de un contenedor. -it es interactive terminal
 
 ```
 Kubectl logs
