@@ -14,7 +14,13 @@ Kubectl create
 : crea un recurso de un documento
 
 ```
-Kubectl edit
+Kubectl edit [nombre del archivo]
+
+i modo insertar
+
+:qa #para salir sin save
+
+:wq #salir y aguardar
 ```
 : editar un recurso
 
@@ -83,9 +89,10 @@ Kubectl -n [namespace] get pods -o wide
 : permiter ver los pod en ese namespace. -o wide expande la informacion
 
 ```
-Kubectl -n [namespace] get pods -o yalm
+Kubectl -n [namespace] get pods [nombre del pod] -o yaml > [nombre del archivo] 
+
 ```
-: permiter ver los pod en ese namespace. -o wide para ver la yalm del pod
+: permiter ver los pod en ese namespace. -o yalm para ver la yalm del pod > [nombre del archivo] 
 
 ```
 kubectl describe pod [name]
@@ -97,6 +104,10 @@ kubectl get all
 ```
 :permite ver los pod y servicios
 
+```
+k scale deploy  deployment-backend-staging -n backend --replicas=1
+```
+:permite desacalar replicas de un pod 
 ## kubectx + kubens
 kubectx es plugins para cambiar rapido de cluster en [[kubectl]]
 kubens es plugins para cambiar entre namespaces facilmente
@@ -126,9 +137,13 @@ kubens -
 ```
 : va atras en el previo namespace
 
+```
+kubectl create secret tls backend-ssl-secret
 
+-n backend --cert=tls.crt --key=tls.key
+```
 
-
+:crea un secreto en tls
 
 
 
