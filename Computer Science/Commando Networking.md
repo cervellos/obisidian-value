@@ -9,7 +9,12 @@ PING [Host PATH]
 nslookup [host PATH]
 ```
 
-**Se**
+**install nmap para un scaneo**
+```
+sudo apt install nmap
 ```
 
+**scaneo dentro de un contenedor**
 ```
+nmap -P0 [url del host] -p[puerto]
+
