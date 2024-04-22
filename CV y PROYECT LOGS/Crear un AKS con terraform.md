@@ -668,8 +668,61 @@ kubectl describe pod -n namespace podname
 
 kubectl logs -n namespace podname
 
+# cert manager
 https://cert-manager.io/docs/installation/kubectl/#verify seguir los pasos en el url la opcion 3.1
-
 
 poner esta linea en el ingress del deploy secion [annotation]
 cert-manager.io/cluster-issuer: letsencrypt-prod
+
+actualizar secretos-ssl-manager
+
+# ARGO CD 
+url https://github.com/argoproj/argo-helm/tree/main
+helm repo add argo https://argoproj.github.io/argo-helm
+
+install CRD 
+kubectl apply -k https://github.com/argoproj/argo-cd/manifests/crds\?ref\=stable
+
+helm install my-argo-cd argo/argo-cd --version 6.7.11 --set crds.install=false -f helm-argocd-install.yaml --create-namespace
+
+kubectl port-forward service/my-argo-cd-argocd-server -n argocd 8080:443
+
+contraseña por default auto generada
+9leIszLHvGnzhela
+
+` NOTA IMPORTANTE: el helm chart se manipulo para por fuera de la installacion para tener el annotation del certamanager, y el secret stl. en el momento en que se haga upgrade se borrara (esto paso por que la version 6.7 agregar estas cosas por otro metodo y a veronica le dio flojera. TODO a mejorar) 
+
+`helm upgrade my-argo-cd argo/argo-cd --values helm-argocd-install.yaml 
+### change default password
+https://argo-cd.readthedocs.io/en/stable/getting_started/#4-login-using-the-cli
+
+`argocd login  [host server]`
+
+`argocd account update-password`
+
+# Crear y Cambiar los pipelines para estretegia gitOps CI/CD######
+
+Descargas localmente el .json
+
+k create configmap mmrv-drive-client --from-file=mmrv_drive_client_secret.json
+``` deployment.yaml
+...
+spec:
+  containers:
+    image: [Image URI]
+    volumeMounts:
+  - name: [name volumen]
+    mountPath: [path] 
+  volumes:
+ - name: [name volumen]
+   configMap:
+    name: [name configmap]
+  ```
+: fijate en la task de ECS la ruta donde debe ir este json
+
+Esto ultimo se lo agregas al deployment del frontend.
+Aplicas ese .yaml y luego entras al pod a comprobar que el .json está dentro del pod en la ruta que le pusiste como " mountPath: /"
+
+
+
+

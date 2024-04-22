@@ -39,7 +39,7 @@ Kubectl apply
 Kubectl exec [pod name] -it -- bash
 ```
 : permite ejecutar un comando dentro de un contenedor. -it es interactive terminal
-
+para salir corre `exit`
 ```
 Kubectl logs
 ```
@@ -108,6 +108,25 @@ kubectl get all
 k scale deploy  deployment-backend-staging -n backend --replicas=1
 ```
 :permite desacalar replicas de un pod 
+
+```
+k get crd | grep argo
+```
+:Custem Source Definition
+
+```
+kubectl get secret mysecret -o yaml
+```
+:obtender secretos
+
+```
+kubectl create secret tls [secret name] --key [private key filename] --cert [certificade filename]
+```
+:create tls secret 
+
+```
+k create configmap [name configmap] --from-file=[path of file]
+```
 ## kubectx + kubens
 kubectx es plugins para cambiar rapido de cluster en [[kubectl]]
 kubens es plugins para cambiar entre namespaces facilmente
