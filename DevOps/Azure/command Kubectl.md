@@ -129,7 +129,7 @@ kubens -
 
 
 
-
+ k exec deployment-backend-staging-54f7d797d7-b7fwl -it -- bash
 
 
 
