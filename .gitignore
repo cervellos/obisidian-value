@@ -1,5 +1,6 @@
 /.obsidian
 /.trash
 .DS_Store
-/.DS_Store
-
+Habit-Calendar
+/Habit-Calendar
+**/Habit-Calendar
