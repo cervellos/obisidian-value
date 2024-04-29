@@ -27,7 +27,6 @@ psql -Fd -d [nombre de la base de datps] -h [server name] -p [puerto] -U [nombre
   
 
 
-  
 
 
 **Eliminando los datos actuales**
@@ -47,5 +46,5 @@ psql -h $POSTGRES_HOST -p $POSTGRES_PORT -U $POSTGRES_USER -d $POSTGRES_DB <$FIL
 **meow**
 
 ```
-
+k exec deployment-backend-staging-6d9d4db965-svlzc -n backend -it -- bash
 ```
