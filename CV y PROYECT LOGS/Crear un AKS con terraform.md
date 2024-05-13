@@ -704,7 +704,9 @@ https://argo-cd.readthedocs.io/en/stable/getting_started/#4-login-using-the-cli
 
 Descargas localmente el .json
 
-k create configmap mmrv-drive-client --from-file=mmrv_drive_client_secret.json
+
+#### CONFIGMAP PARA certpath
+kubectl create configmap mmrv-drive-client --from-file=mmrv_drive_client_secret.json
 ``` deployment.yaml
 ...
 spec:
@@ -712,7 +714,8 @@ spec:
     image: [Image URI]
     volumeMounts:
   - name: [name volumen]
-    mountPath: [path] 
+    mountPath: [path]
+... 
   volumes:
  - name: [name volumen]
    configMap:
