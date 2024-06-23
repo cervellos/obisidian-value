@@ -1,4 +1,4 @@
- history of kubernetes: https://thenewstack.io/primer-how-kubernetes-came-to-be-what-it-is-and-why-you-should-care/ 
+ history of [kubernetes]: https://thenewstack.io/primer-how-kubernetes-came-to-be-what-it-is-and-why-you-should-care/ 
 
 History of K8s
 ## Bare Metal Machines

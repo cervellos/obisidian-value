@@ -10,7 +10,7 @@ Docker es una plataforma de creación de contenedores que se usa para desarrolla
 # ![[Imagenes]]
 #### Objetos de Docker
 
-Hay varios objetos que creará y configurará para admitir las implementaciones de [[contenedores]]. Estos incluyen redes, [[volumenes]] de almacenamiento, complementos y otros objetos de servicio. Aquí no trataremos todos estos objetos, pero es conveniente tener en cuenta que son elementos que se pueden crear e implementar según sea necesario.
+Hay varios objetos que creará y configurará para admitir las implementaciones de [[Contenedores]]. Estos incluyen redes, [[Volumenes]] de almacenamiento, complementos y otros objetos de servicio. Aquí no trataremos todos estos objetos, pero es conveniente tener en cuenta que son elementos que se pueden crear e implementar según sea necesario.
 ## sistema operativo del host 
 El sistema operativo del host es el sistema operativo en el que se ejecuta el motor de Docker. Los contenedores de Docker que se ejecutan en Linux comparten el kernel del sistema operativo del host y no requieren un sistema operativo de contenedor, siempre que el archivo binario pueda acceder directamente al kernel del sistema operativo.![[3-container-scratch-host-os.svg]]
 
@@ -29,4 +29,4 @@ Usamos `Unionfs` para crear imágenes de Docker. `Unionfs` es un sistema de arch
 Docker puede utilizar diferentes interfaces para acceder a las capacidades de virtualizacion del kernel Linux.
 ![[300px-Docker-linux-interfaces.svg.png]]
 
-![[5-efficient-use-hardware.svg]]
+![[Dockers/img/5-efficient-use-hardware.svg]]

@@ -1,0 +1,1 @@
+**Elastic Load Balancing** es el servicio de AWS que distribuye automáticamente el tráfico de aplicaciones entrantes entre varios recursos, como las instancias de Amazon  [[Amazon Elastic Compute Cloud (EC2) | EC2]] 

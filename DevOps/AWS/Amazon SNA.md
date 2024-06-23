@@ -1,0 +1,1 @@
+ **Amazon Simple Notification Service (Amazon SNS)** es un servicio de publicación o suscripción. Con los temas de Amazon SNS, un editor publica mensajes a los suscriptores. Esto es similar a la cafetería; el cajero proporciona pedidos de café al barista que hace las bebidas.

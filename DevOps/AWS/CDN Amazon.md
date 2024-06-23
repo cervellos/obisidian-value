@@ -1,0 +1,1 @@
+Amazon CloudFront es un servicio que ayuda a entregar datos, video, aplicaciones y APIs a clientes de todo el mundo  con baja latencia y altas velocidades de transferencia.  Amazon CloudFront utiliza las denominadas ubicaciones de borde en todo el mundo,  para ayudar a acelerar la comunicación con los usuarios, sin importar el lugar donde se encuentren.

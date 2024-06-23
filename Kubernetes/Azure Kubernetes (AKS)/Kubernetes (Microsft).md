@@ -1,7 +1,7 @@
-es un orquestador de [[contenedores]] o [[Virtual Machines]]
+es un orquestador de [[Contenedores]] o [[Virtual Machines]]
 ## Ventajas de Kubernetes
 
-![[2-kubernetes-benefits.svg]]
+![[CV y PROYECT LOGS/img/2-kubernetes-benefits.svg]]
 - Recuperación automática: por ejemplo, para reiniciar contenedores con errores o para reemplazar contenedores
     
 - Escalado vertical o disminución del número de contenedores implementados de forma dinámica según la demanda
@@ -18,7 +18,7 @@ es un orquestador de [[contenedores]] o [[Virtual Machines]]
 ## POD
 
 * # ![[pods]]
-* [[service]]
+* [[Service]]
 * [[deployment]]\ replimen set
 
 

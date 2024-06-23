@@ -1,0 +1,1 @@
+K9s is a terminal-based user interface that provides a real-time view of your Kubernetes cluster. It simplifies navigating, observing, and managing Kubernetes resources, making it easier for users to monitor and debug their deployments.
